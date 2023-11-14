@@ -65,6 +65,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/oneplus9pro/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/odm/etc/sound_trigger_platform_info.xml \
     $(LOCAL_PATH)/configs/audio/oneplus9pro/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_11/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_0/odm/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_0/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_0/odm/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_0/vendor/etc/audio/sku_lahaina/mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_0/odm/etc/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_0/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_0/odm/etc/sound_trigger_platform_info.xml \
+    $(LOCAL_PATH)/configs/audio/oneplus9rt/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/prj_0/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
+
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
@@ -228,6 +238,7 @@ PRODUCT_PACKAGES += \
     OnePlus9ProFrameworks \
     OnePlus9ProSettingsProvider \
     OnePlus9ProSystemUI \
+    OnePlus9RTSettingsProvider \
     OnePlus9SeriesCarrierConfig \
     OnePlus9SeriesFrameworks \
     OnePlus9SeriesSettings \

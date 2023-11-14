@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0. Sections labeled with 'OOS' are
+## from LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0. Sections labeled with 'OOS' are
 ## on latest OxygenOS which is 13.1.0.591(EX01) at present.
 
 # ADSPRPC
@@ -1162,7 +1162,7 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
-# Fingerprint - OOS (C.63)
+# Fingerprint - OOS
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|253b8a6fc9e81d14818e18e546613e4a0a06433c
 odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|5eead2eabcc060ce5d400a779f1e8482732b7012
@@ -1924,6 +1924,15 @@ odm/lib64/mediadrm/libwvdrmengine.so|f971527c8a5d9ebc4300693836dfe70b93794dc0
 vendor/etc/oplus_Widevine_licenses.pfm|f10e640b4fb4e0d06f068f9eed77e7526ea579bf
 vendor/lib64/libtrustedapploader.so|e57218f85b6eb5c8dd9809c768a11ab450fb3aa2
 
+# Adreno (RT) - OOS
+vendor/firmware/a660_gmu.bin:odm/overlay/prj_0/vendor/firmware/a660_gmu.bin
+vendor/firmware/a660_sqe.fw:odm/overlay/prj_0/vendor/firmware/a660_sqe.fw
+vendor/firmware/a660_zap.b00:odm/overlay/prj_0/vendor/firmware/a660_zap.b00
+vendor/firmware/a660_zap.b01:odm/overlay/prj_0/vendor/firmware/a660_zap.b01
+vendor/firmware/a660_zap.b02:odm/overlay/prj_0/vendor/firmware/a660_zap.b02
+vendor/firmware/a660_zap.elf:odm/overlay/prj_0/vendor/firmware/a660_zap.elf
+vendor/firmware/a660_zap.mdt:odm/overlay/prj_0/vendor/firmware/a660_zap.mdt
+
 # Audio (Pro) - OOS
 odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/overlay/prj_11/odm/etc/acdbdata/Audio_Parameter_Version.txt|88ecaeac81d9c9bf33591ed4dfc1460080d42299
 odm/etc/acdbdata/Bluetooth_cal.acdb:odm/overlay/prj_11/odm/etc/acdbdata/Bluetooth_cal.acdb|27abdd5ee38afa8b204159fc30bd6eba5f2fbf6a
@@ -1934,6 +1943,18 @@ odm/etc/acdbdata/Hdmi_cal.acdb:odm/overlay/prj_11/odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb:odm/overlay/prj_11/odm/etc/acdbdata/Headset_cal.acdb|ec815e17bd04744638a5d7775cd2b04791af4d87
 odm/etc/acdbdata/Speaker_cal.acdb:odm/overlay/prj_11/odm/etc/acdbdata/Speaker_cal.acdb|2293699d874fc9322444afb872208072bf0078a3
 odm/firmware/tfa98xx.cnt:odm/overlay/prj_11/odm/firmware/tfa98xx.cnt|3273540edc56b3959a4c8d994c3e2fa0bd6d2cb8
+
+# Audio (RT) - OOS
+odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/overlay/prj_0/odm/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb:odm/overlay/prj_0/odm/etc/acdbdata/Speaker_cal.acdb
+odm/firmware/tfa98xx.cnt:odm/overlay/prj_0/odm/firmware/tfa98xx.cnt
+vendor/lib/hw/audio.primary.lahaina.so:odm/overlay/prj_0/vendor/lib/hw/audio.primary.lahaina.so
 
 # Audio LVIMFS (Pro) - OOS
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:odm/overlay/prj_11/odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt|6fd79f217853edc0ca219e0614b79501cfb6515d
@@ -1951,6 +1972,43 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:odm/overlay/prj_11/
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:odm/overlay/prj_11/odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt|ba68135f46e91dad25f4ce6a93d5ac2384a3a03b
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:odm/overlay/prj_11/odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt|166d8320b6035830fa67096b100cde9cdcc53bd3
 
+# Audio LVACFS (RT) - OOS
+odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat
+odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID11_HE.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID12_HE_APP1.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID13_HE_APP2.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID14_HE_Cam.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID15_HE_Conference.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID16_HE_Fast.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID17_HE_Interview.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID18_HE_Unprocess.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID19_HE_Voice.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID1_MIC_Normal.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID20_HE_VR.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID21_USB_Normal.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID22_USB_APP1.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID23_BT_Normal.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID24_BT_APP1.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID2_MIC_APP1.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID3_MIC_APP2.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID4_MIC_Cam.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID5_MIC_Conference.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID6_MIC_Fast.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID7_MIC_Interview.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID8_MIC_Unprocess.txt
+odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID9_MIC_Voice.txt
+odm/etc/lvacfs_params/3mic/LVACFS_Calibration360_3mic.dat
+odm/etc/lvacfs_params/3mic/LVACFS_Configuration.txt
+odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_normal.txt
+odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_surround.txt
+odm/etc/lvacfs_params/3mic/LVACFS_Parameter_3mic_zoom.txt
+odm/etc/lvacfs_params/3mic/audiozoom_1.txt
+odm/etc/lvacfs_params/3mic/audiozoom_2.txt
+odm/etc/lvacfs_params/3mic/audiozoom_3.txt
+odm/lib/lib_lvacfs.so
+odm/lib/liblvacfs_wrapper.so
 
 # Camera (Pro) - OOS
 odm/etc/camera/config/camera_unit_config:odm/overlay/prj_11/odm/etc/camera/config/camera_unit_config|803e750571f61ae50597caf8c225eeb40512dc4e
@@ -1977,6 +2035,121 @@ odm/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin:odm/overlay/prj_11/odm/lib64
 odm/lib64/camera/com.qti.tuned.qtech_ov08a10.bin:odm/overlay/prj_11/odm/lib64/camera/com.qti.tuned.qtech_ov08a10.bin|3b41a9338198b8a987cb8422efae3027865ec7af
 odm/lib64/camera/com.qti.tuned.semco_imx789.bin:odm/overlay/prj_11/odm/lib64/camera/com.qti.tuned.semco_imx789.bin|20961fd6fd7e23fa6dec7c07b34cd512f97f02f4
 
+# Camera (RT) - OOS
+odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_20820.so
+odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_20820.so
+odm/etc/camera/CameraHWConfiguration.config:odm/overlay/prj_0/odm/etc/camera/CameraHWConfiguration.config
+odm/etc/camera/anc/merged_model
+odm/etc/camera/anc/merged_model_post
+odm/etc/camera/anc_cl_kernel.cache:odm/overlay/prj_0/odm/etc/camera/anc_cl_kernel.cache
+odm/etc/camera/anc_cl_kernel_ins.cache:odm/overlay/prj_0/odm/etc/camera/anc_cl_kernel_ins.cache
+odm/etc/camera/camera_engmode.xml:odm/overlay/prj_0/odm/etc/camera/camera_engmode.xml
+odm/etc/camera/cfr_bin/CFR_imx766.bin
+odm/etc/camera/cfr_bin/CFR_imx766_uw.bin
+odm/etc/camera/cfr_bin/CFR_s5k3m5.bin
+odm/etc/camera/config/camera_unit_config:odm/overlay/prj_0/odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/camera_unit_feature_config.protobuf:odm/overlay/prj_0/odm/etc/camera/config/camera_unit_feature_config.protobuf
+odm/etc/camera/config/imx471:odm/overlay/prj_0/odm/etc/camera/config/imx471
+odm/etc/camera/config/imx481:odm/overlay/prj_0/odm/etc/camera/config/imx481
+odm/etc/camera/config/imx766:odm/overlay/prj_0/odm/etc/camera/config/imx766
+odm/etc/camera/config/oplus_camera_algo_switch_config:odm/overlay/prj_0/odm/etc/camera/config/oplus_camera_algo_switch_config
+odm/etc/camera/config/oplus_camera_aps_config:odm/overlay/prj_0/odm/etc/camera/config/oplus_camera_aps_config
+odm/etc/camera/config/oplus_camera_config:odm/overlay/prj_0/odm/etc/camera/config/oplus_camera_config
+odm/etc/camera/config/ov02b:odm/overlay/prj_0/odm/etc/camera/config/ov02b
+odm/etc/camera/config/video_beauty_default_config:odm/overlay/prj_0/odm/etc/camera/config/video_beauty_default_config
+odm/etc/camera/distortionParams.bin:odm/overlay/prj_0/odm/etc/camera/distortionParams.bin
+odm/etc/camera/eis_camera.vcfg:odm/overlay/prj_0/odm/etc/camera/eis_camera.vcfg
+odm/etc/camera/fb_default:odm/overlay/prj_0/odm/etc/camera/fb_default
+odm/etc/camera/fdc_cl.cache:odm/overlay/prj_0/odm/etc/camera/fdc_cl.cache
+odm/etc/camera/fdc_lite_cl.cache:odm/overlay/prj_0/odm/etc/camera/fdc_lite_cl.cache
+odm/etc/camera/filters_lut/gt-24hour-city.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-3dcity.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-after-glow.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-azure-water.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-beach.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-blue-water.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-coco-grove.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-crisp-fall.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-desert.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-earth.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-glazed-tile.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-japan.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-lake.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-mountainous.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-old-times.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-quietly-ele.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-rosy.cube.rgb.bin
+odm/etc/camera/filters_lut/gt-steaming.cube.rgb.bin
+odm/etc/camera/fwk_config.json:odm/overlay/prj_0/odm/etc/camera/fwk_config.json
+odm/etc/camera/gasryuv_1.2_wp.model:odm/overlay/prj_0/odm/etc/camera/gasryuv_1.2_wp.model
+odm/etc/camera/model_fdc.data:odm/overlay/prj_0/odm/etc/camera/model_fdc.data
+odm/etc/camera/mtStereoParams.bin:odm/overlay/prj_0/odm/etc/camera/mtStereoParams.bin
+odm/etc/camera/mwStereoParams.bin:odm/overlay/prj_0/odm/etc/camera/mwStereoParams.bin
+odm/etc/camera/settings_fdc.txt:odm/overlay/prj_0/odm/etc/camera/settings_fdc.txt
+odm/etc/camera/settings_fdc_lite.txt:odm/overlay/prj_0/odm/etc/camera/settings_fdc_lite.txt
+odm/etc/camera/wide.bin:odm/overlay/prj_0/odm/etc/camera/wide.bin
+odm/etc/init/calibrationOutput_uw.rc:odm/overlay/prj_0/odm/etc/init/calibrationOutput_uw.rc
+odm/lib64/camera/com.qti.sensor.imx471.20820.so:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensor.imx471.20820.so
+odm/lib64/camera/com.qti.sensor.imx481.20820.so:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensor.imx481.20820.so
+odm/lib64/camera/com.qti.sensor.imx766.20820.so:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensor.imx766.20820.so
+odm/lib64/camera/com.qti.sensor.ov02b.20820.so:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensor.ov02b.20820.so
+odm/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_imx766.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensormodule.qtech_imx766.bin
+odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.sm8350_ofilm_imx481_20820.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.tuned.sm8350_ofilm_imx481_20820.bin
+odm/lib64/camera/com.qti.tuned.sm8350_shine_ov02b_20820.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.tuned.sm8350_shine_ov02b_20820.bin
+odm/lib64/camera/com.qti.tuned.sm8350_sunny_imx766_20820.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.tuned.sm8350_sunny_imx766_20820.bin
+odm/lib64/camera/com.qti.tuned.sm8350_truly_imx471_20820.bin:odm/overlay/prj_0/odm/lib64/camera/com.qti.tuned.sm8350
+odm/lib64/hwconfigurationutiltest
+odm/lib64/libarcsoft_low_light_hdr_for_neon.so
+vendor/lib64/libipebpsstriping170.so
+
+# CVP firmware (RT) - OOS
+vendor/firmware/evass.b00:odm/overlay/prj_0/vendor/firmware/evass.b00
+vendor/firmware/evass.b01:odm/overlay/prj_0/vendor/firmware/evass.b01
+vendor/firmware/evass.b02:odm/overlay/prj_0/vendor/firmware/evass.b02
+vendor/firmware/evass.b03:odm/overlay/prj_0/vendor/firmware/evass.b03
+vendor/firmware/evass.b04:odm/overlay/prj_0/vendor/firmware/evass.b04
+vendor/firmware/evass.b05:odm/overlay/prj_0/vendor/firmware/evass.b05
+vendor/firmware/evass.b06:odm/overlay/prj_0/vendor/firmware/evass.b06
+vendor/firmware/evass.b07:odm/overlay/prj_0/vendor/firmware/evass.b07
+vendor/firmware/evass.b08:odm/overlay/prj_0/vendor/firmware/evass.b08
+vendor/firmware/evass.b09:odm/overlay/prj_0/vendor/firmware/evass.b09
+vendor/firmware/evass.b10:odm/overlay/prj_0/vendor/firmware/evass.b10
+vendor/firmware/evass.b11:odm/overlay/prj_0/vendor/firmware/evass.b11
+vendor/firmware/evass.b12:odm/overlay/prj_0/vendor/firmware/evass.b12
+vendor/firmware/evass.b13:odm/overlay/prj_0/vendor/firmware/evass.b13
+vendor/firmware/evass.b14:odm/overlay/prj_0/vendor/firmware/evass.b14
+vendor/firmware/evass.b15:odm/overlay/prj_0/vendor/firmware/evass.b15
+vendor/firmware/evass.b16:odm/overlay/prj_0/vendor/firmware/evass.b16
+vendor/firmware/evass.b17:odm/overlay/prj_0/vendor/firmware/evass.b17
+vendor/firmware/evass.b18:odm/overlay/prj_0/vendor/firmware/evass.b18
+vendor/firmware/evass.b19:odm/overlay/prj_0/vendor/firmware/evass.b19
+vendor/firmware/evass.mbn:odm/overlay/prj_0/vendor/firmware/evass.mbn
+vendor/firmware/evass.mdt:odm/overlay/prj_0/vendor/firmware/evass.mdt
+
+# Goodix Firmware (RT) - OOS
+odm/vendor/firmware/goodixfp.b00:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b00
+odm/vendor/firmware/goodixfp.b01:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b01
+odm/vendor/firmware/goodixfp.b02:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b02
+odm/vendor/firmware/goodixfp.b03:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b03
+odm/vendor/firmware/goodixfp.b04:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b04
+odm/vendor/firmware/goodixfp.b05:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b05
+odm/vendor/firmware/goodixfp.b06:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b06
+odm/vendor/firmware/goodixfp.b07:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.b07
+odm/vendor/firmware/goodixfp.mdt:odm/overlay/prj_0/odm/vendor/firmware/goodixfp.mdt
+
+# IPA firmware (RT) - OOS
+vendor/etc/init/ipa_fws.rc:odm/overlay/prj_0/vendor/etc/init/ipa_fws.rc
+vendor/firmware/ipa_fws.b00:odm/overlay/prj_0/vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01:odm/overlay/prj_0/vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02:odm/overlay/prj_0/vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03:odm/overlay/prj_0/vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04:odm/overlay/prj_0/vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf:odm/overlay/prj_0/vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt:odm/overlay/prj_0/vendor/firmware/ipa_fws.mdt
+
 # Sensors (Pro) - OOS
 odm/etc/sensor/config/lahaina_aw9610x_0.json:odm/overlay/prj_11/odm/etc/sensor/config/lahaina_aw9610x_0.json|5b074cdc8e9418d3d2d7c5812fb30c99d06a5ac3
 odm/etc/sensor/config/lahaina_aw9610x_down_0.json:odm/overlay/prj_11/odm/etc/sensor/config/lahaina_aw9610x_down_0.json|e20639e0f22213402a2d6493f504519cb321e755
@@ -1991,5 +2164,43 @@ odm/etc/sensor/config/lahaina_qrd_sx932x_down.json:odm/overlay/prj_11/odm/etc/se
 odm/etc/sensor/config/lahaina_tcs3707.json:odm/overlay/prj_11/odm/etc/sensor/config/lahaina_tcs3707.json|27110c033872a3514317e75b74e85977aa19e432
 odm/etc/sensor/sensor_config.json:odm/overlay/prj_11/odm/etc/sensor/sensor_config.json|b3b73426f892824e942f8e8b0d9a42ff3e5ec0f7
 
+# Sensors (RT) - OOS
+odm/etc/sensor/config/lahaina_qrd_ak0991x.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_ak0991x.json
+odm/etc/sensor/config/lahaina_qrd_alsps.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_alsps.json
+odm/etc/sensor/config/lahaina_qrd_cct.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_cct.json
+odm/etc/sensor/config/lahaina_qrd_cct_rear.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_cct_rear.json
+odm/etc/sensor/config/lahaina_qrd_icm4x6xx.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_icm4x6xx.json
+odm/etc/sensor/config/lahaina_qrd_lsm6dso.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_lsm6dso.json
+odm/etc/sensor/config/lahaina_qrd_mmc56x3x.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_mmc56x3x.json
+odm/etc/sensor/config/lahaina_qrd_sx933x_0.json:odm/overlay/prj_0/odm/etc/sensor/config/lahaina_qrd_sx933x_0.json
+odm/etc/sensor/sensor_config.json:odm/overlay/prj_0/odm/etc/sensor/sensor_config.json
+
+# VPU firmware (RT) - OOS
+vendor/firmware/vpu20_4v.b01:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b01
+vendor/firmware/vpu20_4v.b02:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b02
+vendor/firmware/vpu20_4v.b03:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b03
+vendor/firmware/vpu20_4v.b04:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b04
+vendor/firmware/vpu20_4v.b05:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b05
+vendor/firmware/vpu20_4v.b06:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b06
+vendor/firmware/vpu20_4v.b07:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b07
+vendor/firmware/vpu20_4v.b08:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b08
+vendor/firmware/vpu20_4v.b09:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b09
+vendor/firmware/vpu20_4v.b10:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b10
+vendor/firmware/vpu20_4v.b11:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b11
+vendor/firmware/vpu20_4v.b12:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b12
+vendor/firmware/vpu20_4v.b13:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b13
+vendor/firmware/vpu20_4v.b14:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b14
+vendor/firmware/vpu20_4v.b15:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b15
+vendor/firmware/vpu20_4v.b16:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b16
+vendor/firmware/vpu20_4v.b17:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b17
+vendor/firmware/vpu20_4v.b18:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b18
+vendor/firmware/vpu20_4v.b19:odm/overlay/prj_0/vendor/firmware/vpu20_4v.b19
+vendor/firmware/vpu20_4v.mbn:odm/overlay/prj_0/vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v.mdt:odm/overlay/prj_0/vendor/firmware/vpu20_4v.mdt
+vendor/firmware/vpu20_4v_unsigned.mbn:odm/overlay/prj_0/vendor/firmware/vpu20_4v_unsigned.mbn
+
 # WiFi (Pro) - OOS
 odm/etc/wifi/bdwlan.elf:odm/overlay/prj_11/odm/etc/wifi/bdwlan.elf|c46c20a1e84d0df406d23bfe292834db6c59ca6a
+
+# WiFi (RT) - OOS
+odm/etc/wifi/bdwlan.elf:odm/overlay/prj_0/odm/etc/wifi/bdwlan.elf

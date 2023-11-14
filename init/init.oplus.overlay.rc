@@ -34,6 +34,8 @@ on init
 on init
     mount overlay overlay /odm/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/etc:/odm/etc
     mount overlay overlay /odm/lib64 lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/lib64:/odm/lib64
+    mount overlay overlay /odm/vendor/firmware lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/odm/vendor/firmware:/odm/vendor/firmware
     mount overlay overlay /vendor/etc lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/vendor/etc:/vendor/etc
+    mount overlay overlay /vendor/firmware lowerdir=/odm/overlay/prj_${ro.boot.prj_version}/vendor/firmware:/vendor/firmware
     # Use bind mounts for hot directories with few files to avoid overlayfs lookup overheads
     mount none /odm/overlay/prj_${ro.boot.prj_version}/odm/firmware/tfa98xx.cnt /odm/firmware/tfa98xx.cnt bind
